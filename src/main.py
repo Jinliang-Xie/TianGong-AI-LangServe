@@ -40,6 +40,8 @@ app = FastAPI(
     dependencies=[Depends(validate_token)] if FASTAPI_AUTH else None,
 )
 
+# shiyan
+
 origins = ["*"]
 app.add_middleware(
     CORSMiddleware,
